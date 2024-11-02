@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --softblue: hsl(215, 51%, 70%);
+        --cyan: hsl(178, 100%, 50%);
+        --white: hsl(0, 0%, 100%);
+        --darkbluemain: hsl(217, 54%, 11%);
+        --darkbluecard: hsl(216, 50%, 16%);
+        --darkblueline: hsl(215, 32%, 27%);
+      }
+      body {
+        font-family: "Outfit", sans-serif;
+        font-size: 18px;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--darkbluemain);
+      }
+      .container .box-card {
+        background-color: var(--darkbluecard);
+        padding: 18px;
+        width: auto;
+        width: 336px;
+        border-radius: 10px;
+      }
+      .box-card .img-eth {
+        border-radius: 10px;
+      }
+      .box-card h3 {
+        color: var(--white);
+        margin-top: 10px;
+      }
+      .box-card .box-desc {
+        color: var(--softblue);
+        opacity: 0.6;
+        margin-top: 10px;
+      }
+      .card-group {
+        margin: 15px 0px;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .card-group img {
+        display: inline-block;
+        margin-bottom: -2px;
+      }
+      .card-price {
+        float: left;
+        color: var(--cyan);
+      }
+      .card-day {
+        color: var(--softblue);
+        float: right;
+        margin-left: 93px;
+      }
+      .box-card hr {
+        color: var(--softblue);
+        opacity: 0.5;
+      }
+      .card-footer {
+        margin-top: 10px;
+      }
+      .card-footer img {
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--white);
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .card-footer p {
+        color: var(--white);
+        opacity: 0.8;
+        display: block;
+        font-size: 14px;
+        margin-top: -26px;
+        margin-left: 47px;
+      }
+      .card-footer p span {
+        color: var(--white);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-card">
+        <img
+          class="img-eth"
+          src="./images/image-equilibrium.jpg"
+          alt=""
+          width="300px"
+        />
+        <h3 class="box-title">Equilibrium #3429</h3>
+        <p class="box-desc">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card-group">
+          <p class="card-price">
+            <img src="./images/icon-ethereum.svg" alt="" /> 0.041 ETH
+          </p>
+          <p class="card-day">
+            <img src="./images/icon-clock.svg" alt="" />
+            <span>3 days left</span>
+          </p>
+        </div>
+        <hr />
+        <div class="card-footer">
+          <img src="./images/image-avatar.png" alt="" />
+          <p class="footer-desc">Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
